@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Kirandul Project Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main_block">
+        Language:
+        <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true">
+            <asp:ListItem Text="English" Value="en-us" />
+            <asp:ListItem Text="Hindi" Value="hi" />
+        </asp:DropDownList>
+        <hr />
+        <div id="innerblock">
+            <!--Top Panel starts here -->
+            <div id="top_panel"> <a href="index.html" class="logo"><img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
+              <div class="menu"> <a href="index.html">HOME</a> <a href="content.html">PROJECT</a> <a href="http://all-free-download.com/free-website-templates/">SERVICE</a> <a href="http://all-free-download.com/free-website-templates/">EQUIPMENT</a> <a href="http://all-free-download.com/free-website-templates/">CONTACT US</a> </div>
+              <img src="images/tp_bg1.jpg" width="393" height="317" alt="" style="clear:left; float:left; margin:-40px 0 0 55px; position:relative;" /> <img src="images/tp_bg2.jpg" width="499" height="277" alt="" style="float:left;" /> 
+            </div>
+            <!--Top Panel ends here -->           
+         <!--content Panel starts here -->
+    <img src="images/cp_top.jpg" width="892" height="15" alt="" style="float:left; margin-left:54px;" />
+    <div id="contentpanel">  
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+         </asp:ContentPlaceHolder>
+    </div>  
+    <!--content Panel ends here -->
+     <img src="images/cp_btm.jpg" width="892" height="10" alt="" style="clear:left; float:left; margin-left:54px;" />
+    <!--footer panel starts here -->
+    <div id="ft_padd"> <img src="images/ft_left.jpg" width="20" height="103" alt="" style="float:left; margin:10px 0 0 52px;" />
+      <div class="ft_bgtile">
+        <div class="ftr_lnks"> <span class="ft_cpy">Prepared by NMDC Kirandul, C&IT Department</span> </div>
+      </div>
+      <img src="images/ft_rite.jpg" width="17" height="103" alt="" style="float:left; margin-top:10px;" /> </div>
+    <br />
+    <!--footer panel ends here -->
+    </div>
+   <!--innerblock ends here -->
+         </div>
+        <!--mainblock ends here -->
+    </form>
+</body>
+</html>
