@@ -5,8 +5,31 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!--Left Panel starts here --> 
     <div class="lp_padd"> 
-
-     </div>
+        <div class="lp_successpad"> <span class="lp_succespara"> 
+            <span style="color:#FE6C00; font:bold 14px Arial, Helvetica, sans-serif; width:225px; float:left; margin:15px 0 0 20px;">CIRCULARS /<font color="#807D7B"> NOTICES</font> </span>            
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"> <asp:Label Text="<%$Resources:Resource, notice1 %>" runat="server" Font-Bold="true" /> </span> 
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice2 %>" runat="server"  Font-Bold="true" /> </span> 
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice3 %>" runat="server"  Font-Bold="true" /> </span> 
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice4 %>" runat="server"  Font-Bold="true" /> </span> 
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice5 %>" runat="server"  Font-Bold="true" /> </span>             
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice6 %>" runat="server"  Font-Bold="true" /> </span>
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice7 %>" runat="server"  Font-Bold="true" /> </span>
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice8 %>" runat="server"  Font-Bold="true" /> </span>
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice9 %>" runat="server"  Font-Bold="true" /> </span>
+            <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
+            <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice10 %>" runat="server"  Font-Bold="true" /> </span>
+            </span>
+        </div>
+    </div>
      <!--Left Panel ends here -->
      <!--Right Panel starts here -->
      <div class="rp_padd"> 

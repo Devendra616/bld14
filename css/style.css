@@ -208,7 +208,7 @@ display:inline;
 }
 .lp_succespara{
 float:left;
-width:350px;
+width:100%;
 margin:10px 0 0 10px;
 display:inline;
 }
@@ -221,9 +221,9 @@ margin:2px 0 0 0;
 }
 .lp_suctxtxs{
 float:left;
-font:11px/16px Arial, Helvetica, sans-serif;
+font:14px/16px Arial, Helvetica, sans-serif;
 color:#3F6779;
-width:320px;
+width:95%;
 margin:13px 0 0 0;
 }
 .lp_induspad{
