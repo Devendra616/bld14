@@ -5,13 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Kirandul Project Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="main_block">
+    <div id="main_block" class="container-fluid">
         Language:
         <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true">
             <asp:ListItem Text="English" Value="en-us" />
@@ -20,19 +24,140 @@
         <hr />
         <div id="innerblock">
             <!--Top Panel starts here -->
-            <div id="top_panel"> <a href="index.html" class="logo"><img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
-              <div class="menu"> <a href="index.html">HOME</a> <a href="content.html">PROJECT</a> <a href="http://all-free-download.com/free-website-templates/">SERVICE</a> <a href="http://all-free-download.com/free-website-templates/">EQUIPMENT</a> <a href="http://all-free-download.com/free-website-templates/">CONTACT US</a> </div>
-              <img src="images/tp_bg1.jpg" width="393" height="317" alt="" style="clear:left; float:left; margin:-40px 0 0 55px; position:relative;" /> <img src="images/tp_bg2.jpg" width="499" height="277" alt="" style="float:left;" /> 
+            <div id="top_panel"> <a href="index.html" class="logo">
+              <img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
+              <div class="menu"> 
+                  <a href="index.html">HOME</a> 
+                  <a href="content.html">PROJECT</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">SERVICE</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">EQUIPMENT</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">CONTACT US</a>
+              </div>
+              <div id='imageHeader' >
+                    <img src="images/tp_bg1.jpg"  alt="" style="" /> 
+                    <img src="images/tp_bg2.jpg"   alt="" style=" " /> 
+                </div>              
             </div>
-            <!--Top Panel ends here -->           
-         <!--content Panel starts here -->
-    <img src="images/cp_top.jpg" width="892" height="15" alt="" style="float:left; margin-left:54px;" />
+            <!--Top Panel ends here -->    
+            
+            <!-- Bootstrap NavBar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-custom">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse " id="navbarNavDropdown" >
+    <ul class="navbar-nav d-sm-block d-md-none" > <!-- Display main menu only for mobile devices -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+       <!-- This menu is hidden in bigger devices with d-sm-none. 
+           The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+      <li class="nav-item dropdown d-sm-block d-md-none">
+        <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+            <a class="dropdown-item" href="#">Dashboard</a>
+            <a class="dropdown-item" href="#">Imp Links</a>
+            <a class="dropdown-item" href="#">Tasks</a>
+            <a class="dropdown-item" href="#">Etc ...</a>
+        </div>
+      </li><!-- Smaller devices menu END -->
+      
+    </ul>
+  </div>
+</nav><!-- NavBar END -->
+
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group">
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>MAIN MENU</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-dashboard fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Charts</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Profile</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>  
+            <!--           
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>    
+                </div>
+            </a>
+            -->
+            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                </div>
+            </a>
+            
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+
+    <!-- MAIN -->
+        <div class="col">          
+        <div class="card">
+            <h4 class="card-header">
+                <span style="color:#FE6C00; font:bold 14px Arial, Helvetica, sans-serif; float:left; margin:15px 0 0 20px;">CIRCULARS /<font color="#807D7B"> NOTICES</font> </span> 
+            </h4>
+            <div class="card-body">
+                <!--content Panel starts here -->
+    <img src="images/cp_top.jpg" width="892" height="15" alt="" style="float:left; margin-left:54px;" /> 
     <div id="contentpanel">  
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
          </asp:ContentPlaceHolder>
     </div>  
     <!--content Panel ends here -->
+            </div>
+            <!-- Card-body ends here -->
+        </div>
+    </div><!-- Main Col END -->    
+</div><!-- body-row END -->            
+           
+  
      <img src="images/cp_btm.jpg" width="892" height="10" alt="" style="clear:left; float:left; margin-left:54px;" />
     <!--footer panel starts here -->
     <div id="ft_padd"> <img src="images/ft_left.jpg" width="20" height="103" alt="" style="float:left; margin:10px 0 0 52px;" />
@@ -44,8 +169,13 @@
     <!--footer panel ends here -->
     </div>
    <!--innerblock ends here -->
-         </div>
+    </div>
         <!--mainblock ends here -->
     </form>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/customScript.js"></script>
 </body>
 </html>

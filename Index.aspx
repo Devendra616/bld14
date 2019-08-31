@@ -5,10 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!--Left Panel starts here --> 
     <div class="lp_padd"> 
-        <div class="lp_successpad"> <span class="lp_succespara"> 
-            <span style="color:#FE6C00; font:bold 14px Arial, Helvetica, sans-serif; width:225px; float:left; margin:15px 0 0 20px;">CIRCULARS /<font color="#807D7B"> NOTICES</font> </span>            
+        <div class="lp_successpad"> <span class="lp_succespara">             
             <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
-            <span class="lp_suctxtxs"> <asp:Label Text="<%$Resources:Resource, notice1 %>" runat="server" Font-Bold="true" /> </span> 
+            <span class="lp_suctxtxs"> <asp:Label Text="<%$Resources:Resource, notice1 %>" runat="server" Font-Bold="true" /> <span class="badge badge-pill badge-danger">New</span></span> 
             <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
             <span class="lp_suctxtxs"><asp:Label Text="<%$Resources:Resource, notice2 %>" runat="server"  Font-Bold="true" /> </span> 
             <img src="images/lp_sucesarro.jpg" width="12" height="14" alt="" style="clear:left; float:left; margin:15px 10px 0 0;" /> 
@@ -115,8 +114,7 @@
           Etiam iaculis dui facilisis odio hendr</a> <a href="http://all-free-download.com/free-website-templates/" style="clear:left; float:left; margin:15px 0 0 20px;"><img src="images/rp_mainclick.jpg" width="86" height="45" alt="" /></a> </div>
      </div>
      <!--Right Panel ends here -->
-    <asp:Label ID="Label1" Text="<%$Resources:Resource, About %>" runat="server" Font-Bold="true" />
-    <br />
+   
     <br />
 </asp:Content>
 
