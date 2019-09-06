@@ -24,8 +24,8 @@
         <hr />
         <div id="innerblock">
             <!--Top Panel starts here -->
-            <div id="top_panel"> <a href="index.html" class="logo">
-              <img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
+               <!--     <div id="top_panel"> <a href="index.html" class="logo">
+        <img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
               <div class="menu"> 
                   <a href="index.html">HOME</a> 
                   <a href="content.html">PROJECT</a> 
@@ -33,8 +33,22 @@
                   <a href="http://all-free-download.com/free-website-templates/">EQUIPMENT</a> 
                   <a href="http://all-free-download.com/free-website-templates/">CONTACT US</a>
               </div>
-              <div id='imageHeader' >
-                    <img src="images/tp_bg1.jpg"  alt="" style="" /> 
+                 -->
+                <div class="row" id="top_panel">
+                    <div class="col-2 logo">
+                        <img src="images/NMDC_Title.png" width="279" height="54" alt="NMDC Logo" /></a>
+                    </div>
+                    <div class="col-5 float-right menu">
+                         <a href="index.html">HOME</a> 
+                  <a href="content.html">PROJECT</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">SERVICE</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">EQUIPMENT</a> 
+                  <a href="http://all-free-download.com/free-website-templates/">CONTACT US</a>
+                    </div>
+                </div>
+
+              <div id='imageHeader' class="row">
+                    <img src="images/tp_bg1.jpg"  alt=""  /> 
                     <img src="images/tp_bg2.jpg"   alt="" style=" " /> 
                 </div>              
             </div>
@@ -83,26 +97,76 @@
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="#submenu-downloadFrm" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-dashboard fa-fw mr-3"></span> 
-                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="fa fa-download fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Download Forms</span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
             <!-- Submenu content -->
-            <div id='submenu1' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Charts</span>
+            <div id='submenu-downloadFrm' class="collapse sidebar-submenu">
+                <a href="Forms\English\CPF_advance.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">CPF Advance</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Reports</span>
+                 <a href="Forms\English\IT Inventment declaration.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">IT Investment Declartion</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Tables</span>
+                     <a href="Forms\English\loss from house property.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Loss from House Property</span>
                 </a>
+                     <a href="FForms\English\Group Presonal Accident Insurance.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Group Presonal Accident Insurance</span>
+                </a>
+                     <a href="Forms\English\FURNITURE ADVANCE FORM.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Furniture Advance</span>
+                </a>
+                     <a href="Forms\English\Medical Card for dependent student.pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Dependent Student Medical Card</span>
+                </a>
+                <a href="Forms\English\Cafeteria Options (WM).pdf" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Cafeteria Options(WM)</span>
+                </a>
+                <a href="EL-HPL.htm" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">EL / HPL Form</span>
+                </a>
+                <a href="Entertainment.doc" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Entertainment Form</span>
+                </a>
+                <a href="Maintenance.doc" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Vehicle Maintenace Form</span>
+                </a>          
             </div>
-            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <!-- submenu-downloadFrm ends Download Forms-->
+            <!-- submenu-departments starts-->
+            <a href="#submenu-departments" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-building-o fa-fw mr-3"></span> 
+                    <span class="menu-collapsed">Departments</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <div id='submenu-departments' class="collapse sidebar-submenu">
+                 <a href="#dept-ie" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                 <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-industry fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Industrial Engg.(I.E.)</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+                </a>
+                <div id='dept-ie' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Submenu1</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Submenu2</span>
+                </a>
+            </div> 
+            </div>
+            <!-- submenu-departments ends Departments-->
+
+
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-user fa-fw mr-3"></span>
                     <span class="menu-collapsed">Profile</span>
@@ -110,7 +174,7 @@
                 </div>
             </a>
             <!-- Submenu content -->
-            <div id='submenu2' class="collapse sidebar-submenu">
+            <div id='submenu3' class="collapse sidebar-submenu">
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Settings</span>
                 </a>
@@ -118,14 +182,14 @@
                     <span class="menu-collapsed">Password</span>
                 </a>
             </div>  
-            <!--           
+                  
             <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-tasks fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Tasks</span>    
+                    <span class="menu-collapsed">About Project</span>    
                 </div>
             </a>
-            -->
+            
             <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
@@ -173,7 +237,7 @@
         <!--mainblock ends here -->
     </form>
 
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/customScript.js"></script>
